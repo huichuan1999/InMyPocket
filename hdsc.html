@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" />
+
     <title>
         IN MY POCKET
     </title>
 
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="./gallery/gallery.css">
     <script src="/javaScript/changeImage.js"></script>
 
 </head>
@@ -18,75 +21,96 @@
     <div class="shell">
         <div class="nav">
             <ul class="navlist">
-                <li class="btli"><a href="#">HOME</a>
+                <li class="btli"><a href="https://elirab.au/">HOME</a>
                     <ul class="droplist">
-                        <li><a href="#">Pocket Galerie</a></li>
+                        <li><a href="https://elirab.au/">Pocket Galerie</a></li>
                     </ul>
                 </li>
-                <li class="btli"><a href="#">ABOUT</a>
+                <li class="btli"><a href="https://elirab.au/">ABOUT</a>
                     <ul class="droplist">
-                        <li><a href="#">Story</a></li>
+                        <li><a href="https://elirab.au/">Story</a></li>
                     </ul>
                 </li>
-                <li class="btli"><a href="#">OUR RESOURCES</a>
+                <li class="btli"><a href="https://elirab.au/">OUR RESOURCES</a>
                     <ul class="droplist">
-                        <li><a href="#">Scotland</a></li>
-                        <li><a href="#">South Africa</a></li>
-                        <li><a href="#">Austrilia</a></li>
+                        <li><a href="https://elirab.au/">Scotland</a></li>
+                        <li><a href="https://elirab.au/">South Africa</a></li>
+                        <li><a href="https://elirab.au/">Austrilia</a></li>
                     </ul>
                 </li>
-                <li class="btli"><a href="#">CALENDAR</a>
+                <li class="btli"><a href="https://elirab.au/">CALENDAR</a>
                     <ul class="droplist">
-                        <li><a href="#">Editorial</a></li>
+                        <li><a href="https://elirab.au/">Editorial</a></li>
                     </ul>
                 </li>
-                <li class="btli"><a href="#">PRODUCT</a>
+                <li class="btli"><a href="https://elirab.au/">PRODUCT</a>
                     <ul class="droplist">
-                        <li><a href="#">New Item</a></li>
-                        <li><a href="#">My Cart</a></li>
-                        <li><a href="#">Pockets</a></li>
+                        <li><a href="https://elirab.au/">New Item</a></li>
+                        <li><a href="https://elirab.au/">My Cart</a></li>
+                        <li><a href="https://elirab.au/">Pockets</a></li>
                     </ul>
                 </li>
-                <li class="btli"><a href="#">EDUCATIONS</a>
+                <li class="btli"><a href="https://elirab.au/">EDUCATIONS</a>
                     <ul class="droplist">
-                        <li><a href="#">Editorial</a></li>
+                        <li><a href="https://elirab.au/">Editorial</a></li>
                     </ul>
                 </li>
-                <li class="btli"><a href="#">COOPERATION</a>
+                <li class="btli"><a href="https://elirab.au/">COOPERATION</a>
                     <ul class="droplist">
-                        <li><a href="#">WA Museum</a></li>
-                        <li><a href="#">Donate</a></li>
+                        <li><a href="https://elirab.au/">WA Museum</a></li>
+                        <li><a href="https://elirab.au/">Donate</a></li>
                     </ul>
                 </li>
-                <li class="btli"><a href="#">CONTACT</a>
+                <li class="btli"><a href="https://elirab.au/">CONTACT</a>
                     <ul class="droplist">
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Youtube</a></li>
-                        <li><a href="#">Instagram</a></li>
+                        <li><a href="https://elirab.au/">Facebook</a></li>
+                        <li><a href="https://elirab.au/">Youtube</a></li>
+                        <li><a href="https://elirab.au/">Instagram</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
-
+        <img id="logo" src="./images/WAH-Logo.png"/>
         <div class="image" style="background-image: url('./images/InMyPocket.png');"></div>
         <div class="heading">
             <h2>WE ARE Here!</h2>
             <h1>In my pocket</h1>
         </div>
         <div class="text">
-            <h1>Set goals in your mind</h1>
+            <p>
+                <b style=font-size:30px;>Mission </b>
+                <br>
+                <br>WE ARE HERE!’s mission is to introduce a positive, effective and long lasting education program
+                focussed on Dorrith Sim’s autobiographical photo book, In My Pocket.
+                <br>
+                In My Pocket is an uplifting true story of rescue and survival which also speaks to the current
+                situation of refugees and displaced children around the globe as many of the Kindertransport stories do.
+                <br>
+                The Kindertransport is such an inspiring educational tool because it is uplifting and hopeful, mixed
+                with kindness, generosity and acceptance, and huge amounts of resilience and determination. It’s a
+                wonderful “all round” package for students.
+                <br>
+                The program is aimed at 8 to 12 year old primary school children.
+            </p>
         </div>
 
         <!-- <div class="image" id="background" style="background-image: url('./images/BG1.jpg');"></div> -->
-        <div id="bg1" class="bg-image" style="background-image: url('./images/BG1.jpg');"></div>
-        <div id="bg2" class="bg-image" style="background-image: url('./images/BG2.jpg'); opacity: 0;"></div>
+        <!-- <div id="bg1" class="bg-image" style="background-image: url('./images/BG1.jpg');" onmouseover="changeBg(true)"
+            onmouseout="changeBg(false)">
+        </div> -->
+
+            <div id="bg1" class="bg-image" style="background-image: url('./images/BG1.jpg');"
+                onmouseover="changeBg(true)"></div>
+            <div id="bg2" class="bg-image transition-bg" style="background-image: url('./images/BG2.jpg'); opacity: 0;"onmouseover="changeBg(true)"></div>
+
 
         <div class="heading">
-            <h1 onmouseover="changeBg(true)" onmouseout="changeBg(false)">When you're down</h1>
+            <h2>Gallery</h2>
         </div>
         <div class="text">
             <h1>Try to wake up the beast in your heart</h1>
         </div>
+
 
         <div class="image" style="background-image: url('./images/BG3.jpg');"></div>
         <div class="heading">
