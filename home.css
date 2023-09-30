@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* Regular */
+    background-color: #1e5948;
+    float:none;
+}
+
+.shell{
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 2px;
+}
+.shell div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: 30px;
+    letter-spacing: 2px;
+}
+.image{
+    transform: translateZ(-1px) scale(1.6);
+    background-size: cover;
+    height: 80vh;
+    z-index: -1;
+}
+.bg-image {
+    transform: translateZ(-1px) scale(1.6);
+    background-size: cover;
+    height: 80vh;
+    transition: opacity 1s;
+    z-index: -1;
+}
+.text{
+    height: 50vh;
+    background-color: #1e5948;
+}
+.text h1{
+    color: #dad4a0;
+}
+.heading{
+    display: flex;
+    z-index: -1;
+    transform: translateY(-30vh) translateZ(1px);
+    color: #dad4a0;
+    font-size: 30px;
+    flex-direction: column;
+}
+.nav{
+    font-family: 'Roboto', sans-serif;
+    font-size:20px;
+    height:80px;
+    background: #1e5948;
+}
+.btli{
+    font-weight: 700; /* Bold */
+    position: relative;
+    /* 横排对齐 */
+    float:left; 
+    line-height:40px;
+    text-align: center;
+}
+.navlist a{
+    color:rgb(251, 255, 208);
+    display:block;
+    padding:0 20px;
+}
+.navlist a:hover{
+    background: rgb(68, 133, 140);
+    transition: opacity 1s;
+}
+.droplist{
+    font-weight: 500; /* Medium */
+    background:rgb(68, 133, 140);
+    box-shadow: 0 1px 2px rgb(111, 102, 129);
+    display:none;
+    position: absolute;  /* 新增这行 */
+    left: 0;  /* 新增这行 */
+    top: 100%;  /* 新增这行 */
+}
+.btli:hover .droplist{
+    display:block;
+    background: #1e5948;
+}
