@@ -140,3 +140,32 @@ a:hover, button:hover, input[type="submit"]:hover {
     display:block; 
     background: #183a31;
 }
+.buttonContainer{
+    position: fixed;  /* 或者可以使用 position: absolute; 根据你的布局需求 */
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /* 用于设置按钮之间的空间 */
+}
+.panelBottom{
+    height:30vh;
+    background-color:  #1e5948;
+}
+.button{
+    font-family: 'Lato', sans-serif;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 3px solid #dad4a0;
+    border-radius: 5px;
+    background-color: transparent; 
+    cursor: pointer;
+    color:#dad4a0; 
+    transition: background-color 0.3s ease; 
+}
+.button:hover{
+    background-color: #dad4a0; 
+    color: #1e5948;
+    cursor: url('./images/point.png') , auto;
+}
